@@ -740,6 +740,11 @@ a:hover {
 }
 
 /* ---------- Education ---------- */
+.edu-list {
+  display: grid;
+  gap: 20px;
+}
+
 .edu-card {
   display: flex;
   align-items: flex-start;
