@@ -1,258 +1,300 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeril Johnson</title>
-    <link rel="icon" href="images/profile-photo.jpeg" sizes="16x16">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jeril Johnson · Software Quality Assurance Engineer</title>
+  <meta name="description" content="Jeril Johnson is a Software Quality Assurance Engineer at Aetonix with a mobile development background and hands-on experience in AI-assisted testing with Claude.">
+  <meta name="theme-color" content="#0e0f11">
+  <link rel="canonical" href="https://jeriljohnson.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeriljohnson.com/">
+  <meta property="og:title" content="Jeril Johnson · Software Quality Assurance Engineer">
+  <meta property="og:description" content="Software QA engineer at Aetonix with a mobile development background and hands-on experience in AI-assisted testing with Claude.">
+  <meta property="og:image" content="https://jeriljohnson.com/images/og-image.jpg">
+  <meta property="og:image:width" content="440">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="Portrait of Jeril Johnson">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- Apply the saved theme before first paint so there is no flash of the wrong theme. -->
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var theme = 'dark';
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') theme = saved;
+      } catch (e) {}
+      root.setAttribute('data-theme', theme);
+      root.classList.add('js');
+      var themeColor = document.querySelector('meta[name="theme-color"]');
+      if (themeColor) themeColor.setAttribute('content', theme === 'light' ? '#faf8f5' : '#0e0f11');
+    })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header class="bg-info" style="position:fixed; width:100%; z-index: 1;">
-        <div class="row text-white">
-            <div class="col-md-6 col-8 p-3 ps-5">
-                <h2>Jeril Johnson</h2>
-            </div>
-            <div class="col-md-6 col-3 ms-auto my-auto">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid">
-                      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="fs-5 navbar-nav mb-2 mb-lg-0 ms-auto d-lg-flex align-items-center">
-                          <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#home-section">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-white" href="#service-section">Services</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-white" href="#experience-section">Experience</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-white" href="#contact-section">Contact me</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <section class="p-5" id="home-section">
-      <div class="container">
-        <div class="row align-items-center" style="margin-top: 5em;">
-          <div class="col-md-6">
-            <img class="image-fluid rounded-circle" width="400" height="400" src="images/profile-photo.jpeg" >
-          </div>
-          <div class="col-md-6">
-            <h4 class="pt-5">Mobile Application Developer</h4>
-            <blockquote class="blockquote">
-              <p>"You are the average of 5 people you hang around."</p>
-              <footer id="service-section">-- Jeril</footer>
-            </blockquote>
-          </div>
-        </div>
-      </div>   
-    </section>
-    <section class="bg-light p-4" >
-      <div class="cotainer">
-        <header>
-          <h1 class="text-center">Services</h1>
-        </header>
-        <div class="row">
-          <div class="col-md-4 mt-5 d-flex justify-content-center">
-            <div class="card text-center p-3" style="width: 18rem;">
-              <i class="fas fa-vial display-1 text-info"></i>
-              <div class="card-body">
-                <h5 class="card-title">Testing</h5>
-                <p class="card-text">Software testing is a critical process of evaluating and validating software functionality, performance, and quality to ensure it meets the intended requirements and delivers a reliable user experience.</p>
-              </div>
-            </div>
-          </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#about">Jeril Johnson<span aria-hidden="true">.</span></a>
 
-          <div class="col-md-4 mt-5 d-flex justify-content-center">
-            <div class="card text-center p-3" style="width: 18rem;">
-              
-              <i class="fas fa-mobile-alt display-1 text-info"></i>
-              <div class="card-body">
-                <h5 class="card-title">Android Development</h5>
-                <p class="card-text">Android development involves creating mobile applications for the Android operating system using Kotlin programming languages and the Android SDK.</p>
-              </div>
-            </div>
-          </div>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-          <div class="col-md-4 mt-5 d-flex justify-content-center">
-            <div class="card text-center p-3" style="width: 18rem;">
-              <i class="fas fa-mobile-alt display-1 text-info"></i>
-              <div class="card-body">
-                <h5 class="card-title">iOS Development</h5>
-                <p class="card-text">iOS development involves creating and building mobile applications specifically for Apple's iOS operating system using programming languages like Swift.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch to light theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
 
-        <div class="row mt-5">
-          <div class="col-md-4 mt-3 d-flex justify-content-center">
-            <div class="card text-center p-3" style="width: 18rem;">
-              <i class="fab fa-react display-1 text-info"></i>
-              <div class="card-body">
-                <h5 class="card-title">React Native</h5>
-                <p class="card-text">React Native development is a popular framework for building cross-platform mobile applications using JavaScript and React, allowing developers to write code once and deploy it on multiple platforms.</p>
-              </div>
-            </div>
-          </div>
+      <button class="icon-btn menu-btn" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </header>
 
-          <div class="col-md-4 mt-3 d-flex justify-content-center">
-            <div class="card text-center p-3" style="width: 18rem;">
-              <i class="fab fa-chrome display-1 text-info"></i>
-              <div class="card-body">
-                <h5 class="card-title">PWA</h5>
-                <p class="card-text">Progressive web development refers to the process of creating web applications that provide a seamless user experience across different devices and progressively enhance their functionality and features based on the capabilities of the user's device and browser.</p>
-              </div>
-            </div>
-          </div>
+  <main id="main">
+    <section class="hero" id="about" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <figure class="hero-photo">
+          <img src="images/profile-photo.webp" width="440" height="500" alt="Jeril Johnson standing in front of a red telephone box" fetchpriority="high">
+        </figure>
 
-          <div class="col-md-4 mt-3 d-flex justify-content-center">
-            <div class="card text-center p-3" style="width: 18rem;">
-              <i class="fas fa-envelope display-1 text-info"></i>
-              <div class="card-body">
-                <h5 class="card-title">Postman</h5>
-                <p class="card-text">Postman is a powerful API development and testing platform that allows developers to design, document, and test APIs efficiently.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-md-4 mt-3 d-flex justify-content-center">
-            <div class="card text-center p-3" style="width: 18rem;">
-              <i class="fab fa-python display-1 text-info"></i>
-              <div class="card-body">
-                <h5 class="card-title">Python</h5>
-                <p class="card-text">Python programming is a high-level, versatile, and easy-to-learn language widely used for scripting, web development, data analysis, and automation.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mt-3 d-flex justify-content-center">
-            <div class="card text-center p-3" style="width: 18rem;">
-              <i class="fab fa-html5 display-1 text-info"></i>
-              <div class="card-body">
-                <h5 class="card-title">Express.js</h5>
-                <p class="card-text">Express.js is a fast and minimalist web application framework for Node.js, designed for building efficient and scalable server-side applications.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mt-3 d-flex justify-content-center">
-            <div class="card text-center p-3" style="width: 18rem;">
-              <i class="fab fa-java display-1 text-info"></i>
-              <div class="card-body">
-                <h5 class="card-title">Selenium</h5>
-                <p class="card-text">Selenium is a popular open-source framework for automating web browsers, enabling software developers to perform automated testing and web scraping tasks.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-light p-4" >
-      <div class="cotainer">
-        <header>
-          <h1 class="text-center">Experiences</h1>
-        </header>
-        <div class="row">
-          <div class="col-md-4 mt-5 d-flex justify-content-center">
-            <a href="https://www.jio.com/" style="text-decoration: none; color: black;">
-            <div class="card text-center p-3" style="width: 18rem;">
-              <img class="card-img-top" src="images/jio.jpg">
-              <div class="card-body">
-                <h5 class="card-title">Reliance Jio</h5>
-                <p class="card-text" id="contact-section">Assistant Manager (Service Validation)</p>
-              </div>
-            </div>
+        <div class="hero-text">
+          <p class="eyebrow">Hi, I'm Jeril Johnson</p>
+          <h1 id="hero-title">Software Quality Assurance Engineer</h1>
+          <ul class="hero-sub">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+              Mobile development background
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 3v4M17 5h4M5 17v4M3 19h4"/></svg>
+              AI-assisted testing with Claude
+            </li>
+          </ul>
+          <p class="lede">
+            I'm a Software Quality Assurance Engineer at Aetonix, testing healthcare software across web, mobile and APIs.
+            I trained as a mobile developer (Fanshawe College) and worked in testing at Experion and Reliance Jio, so I test with a developer's eye.
+            Lately I build AI-assisted QA workflows with Claude Code, generating and reviewing test cases against Jira and TestRail.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg>
+              Get in touch
+            </a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/jeriljohnsonn/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              LinkedIn
             </a>
           </div>
-
-          <div class="col-md-4 mt-5 d-flex justify-content-center">
-            <div class="card text-center p-3" style="width: 18rem;">
-              <img class="card-img-top" src="images/experion_technologies.jpeg">
-              <div class="card-body">
-                <h5 class="card-title">Experion Technologies</h5>
-                <p class="card-text">Senior Test Engineer</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mt-5 d-flex justify-content-center">
-            <div class="card text-center p-3" style="width: 18rem;">
-              <img class="card-img-top" src="images/aetonix.jpeg">
-              <div class="card-body">
-                <h5 class="card-title">Aetonix</h5>
-                <p class="card-text">Technical Support Intern</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <section class="p-3">
+    <section class="section" id="experience" aria-labelledby="experience-title">
       <div class="container">
-        <div class="row">
-          <header>
-            <h1 class="text-center">Contact me</h1>
-          </header>
-          <form class="row g-3" action="https://formsubmit.co/9682be8d6afb0cfa0aa36908d5ee82c8" method="POST">
-            <div class="col-md-6">
-              <label class="form-label">Name</label>
-              <input type="text" name ="name" class="form-control" id="name" placeholder="Jon Smith" required>
+        <header class="section-head">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Where I've worked</h2>
+        </header>
+
+        <ol class="companies">
+          <li class="company">
+            <div class="company-head">
+              <span class="logo"><img src="images/aetonix.png" width="56" height="56" alt="" loading="lazy"></span>
+              <div>
+                <h3><a href="https://www.aetonix.com/" target="_blank" rel="noopener noreferrer">Aetonix</a></h3>
+                <p class="company-span"><time datetime="2023-09">Sep 2023</time> – Present</p>
+              </div>
             </div>
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">E-mail</label>
-              <input name ="email" type="email" class="form-control" id="email" placeholder="abc@gmail.com" required>
+            <ol class="roles">
+              <li class="role is-current">
+                <h4 class="role-title">Software Quality Assurance Engineer I</h4>
+                <p class="role-meta"><span><time datetime="2026-08">Aug 2026</time> – <span class="present">Present</span></span></p>
+              </li>
+              <li class="role">
+                <h4 class="role-title">QA / Software Tester</h4>
+                <p class="role-meta"><span><time datetime="2024-11">Nov 2024</time> – <time datetime="2026-08">Aug 2026</time></span></p>
+              </li>
+              <li class="role">
+                <h4 class="role-title">Technical Support Intern</h4>
+                <p class="role-meta"><span><time datetime="2024-01">Jan 2024</time> – <time datetime="2024-11">Nov 2024</time></span><span class="tag">Full-time contract</span></p>
+              </li>
+              <li class="role">
+                <h4 class="role-title">Technical Support Intern</h4>
+                <p class="role-meta"><span><time datetime="2023-09">Sep 2023</time> – <time datetime="2023-12">Dec 2023</time></span><span class="tag">Co-op</span></p>
+              </li>
+            </ol>
+          </li>
+
+          <li class="company">
+            <div class="company-head">
+              <span class="logo"><img src="images/experion.jpg" width="56" height="56" alt="" loading="lazy"></span>
+              <div>
+                <h3><a href="https://experionglobal.com/" target="_blank" rel="noopener noreferrer">Experion Technologies</a></h3>
+                <p class="company-span"><time datetime="2021-12">Dec 2021</time> – <time datetime="2022-08">Aug 2022</time></p>
+              </div>
             </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Address</label>
-              <input name="address" type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+            <ol class="roles">
+              <li class="role">
+                <h4 class="role-title">Senior Test Engineer</h4>
+                <p class="role-meta"><span><time datetime="2021-12">Dec 2021</time> – <time datetime="2022-08">Aug 2022</time></span></p>
+              </li>
+            </ol>
+          </li>
+
+          <li class="company">
+            <div class="company-head">
+              <span class="logo"><img src="images/jio.png" width="56" height="56" alt="" loading="lazy"></span>
+              <div>
+                <h3><a href="https://www.jio.com/" target="_blank" rel="noopener noreferrer">Reliance Jio</a></h3>
+                <p class="company-span"><time datetime="2017-07">Jul 2017</time> – <time datetime="2019-07">Jul 2019</time></p>
+              </div>
             </div>
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Address 2</label>
-              <input name="address2" type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
-            </div>
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Message</label>
-              <textarea type="text" name="message" class="form-control" cols="30" rows="10" id="message" placeholder="Type your message here" required></textarea>
-            </div>
-            <div class="col-12 text-center">
-              <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
-            </div>
-          </form>
+            <ol class="roles">
+              <li class="role">
+                <h4 class="role-title">Assistant Manager (Service Validation)</h4>
+                <p class="role-meta"><span><time datetime="2017-07">Jul 2017</time> – <time datetime="2019-07">Jul 2019</time></span></p>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">What I work with</h2>
+        </header>
+
+        <div class="skill-grid">
+          <article class="skill-card">
+            <span class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg>
+            </span>
+            <h3>Testing &amp; QA</h3>
+            <ul class="chips">
+              <li>Manual testing</li>
+              <li>Test case design</li>
+              <li>API testing</li>
+              <li>Postman</li>
+              <li>Selenium</li>
+              <li>TestRail</li>
+              <li>Jira</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 3v4M17 5h4M5 17v4M3 19h4"/></svg>
+            </span>
+            <h3>AI-assisted QA</h3>
+            <ul class="chips">
+              <li>Claude Code</li>
+              <li>AI test-case generation &amp; review</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            </span>
+            <h3>Mobile</h3>
+            <ul class="chips">
+              <li>Android (Kotlin)</li>
+              <li>iOS (Swift)</li>
+              <li>React Native</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <footer class="bg-info">
+    <section class="section" id="education" aria-labelledby="education-title">
       <div class="container">
-        <div class="col-md-12 text-center text-white">
-          <a href="https://www.facebook.com/jeril.johnsonn" target="_blank" rel="noopener noreferrer" style="color:white"><i class="fab fa-facebook me-2"></i></a>
-          <a href="https://www.instagram.com/jeril95n/" target="_blank" rel="noopener noreferrer" style="color:white"><i class="fab fa-instagram me-2"></i></a>
-          <a href="https://www.linkedin.com/in/jeriljohnsonn/" target="_blank" rel="noopener noreferrer" style="color:white"><i class="fab fa-linkedin-in me-2"></i></a>
-          <a href="https://github.com/Jeril1995" target="_blank" rel="noopener noreferrer" style="color:white"><i class="fab fa-github"></i></a>
-          <p>Copyrights</p>
-        </div>
-      </div>
-    </footer>
+        <header class="section-head">
+          <p class="eyebrow">Education</p>
+          <h2 id="education-title">Where I studied</h2>
+        </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/dce07c7674.js" crossorigin="anonymous"></script>
-  </body>
+        <article class="edu-card">
+          <span class="logo logo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/><path d="M22 10v6"/></svg>
+          </span>
+          <div>
+            <h3>Post-Graduate Certificate, Mobile Application Development</h3>
+            <p class="edu-school"><a href="https://www.fanshawec.ca/" target="_blank" rel="noopener noreferrer">Fanshawe College</a></p>
+            <p class="role-meta"><span><time datetime="2022-08">Aug 2022</time> – <time datetime="2023-09">Sep 2023</time></span></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-intro">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let's talk</h2>
+          <p>Have a question, a role in mind, or just want to say hi? Send a message and it comes straight to my inbox.</p>
+          <p>You can also find me on <a href="https://www.linkedin.com/in/jeriljohnsonn/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+        </div>
+
+        <form class="contact-form" action="https://formsubmit.co/9682be8d6afb0cfa0aa36908d5ee82c8" method="POST">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg>
+            Send message
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Jeril Johnson</p>
+      <ul class="socials">
+        <li>
+          <a class="icon-btn" href="https://www.linkedin.com/in/jeriljohnsonn/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="icon-btn" href="https://github.com/Jeril1995" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
 </html>
